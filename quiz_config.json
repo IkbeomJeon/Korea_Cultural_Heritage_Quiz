@@ -1,0 +1,19 @@
+{
+  "selected_categories": [
+    "구석기",
+    "신석기",
+    "청동기",
+    "철기",
+    "동예",
+    "고구려",
+    "백제",
+    "신라",
+    "가야",
+    "발해",
+    "통일신라"
+  ],
+  "accuracy_filter": 100,
+  "show_artifact_name": false,
+  "auto_next_delay": 1.5,
+  "window_geometry": "618x863+556+50"
+}
