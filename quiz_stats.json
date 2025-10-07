@@ -4,7 +4,7 @@
     "correct": 1
   },
   "legacy_images\\7.백제\\사택 지적비.png": {
-    "total": 2,
+    "total": 3,
     "correct": 0
   },
   "legacy_images\\7.백제\\익산 미륵사지 석탑(한국 석탑중 최고).png": {
@@ -28,24 +28,24 @@
     "correct": 1
   },
   "legacy_images\\2.신석기\\갈팔과 갈돌.png": {
-    "total": 2,
-    "correct": 0
+    "total": 3,
+    "correct": 1
   },
   "legacy_images\\8.신라\\북한산비(한강).png": {
     "total": 3,
     "correct": 1
   },
   "legacy_images\\1.구석기\\슴베찌르개.png": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "legacy_images\\1.구석기\\흥수아이.png": {
     "total": 1,
     "correct": 1
   },
   "legacy_images\\3.청동기\\미송리식토기.png": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "legacy_images\\11.통일신라\\원성왕릉 무인상(서역과 교류).png": {
     "total": 1,
@@ -60,7 +60,7 @@
     "correct": 1
   },
   "legacy_images\\9.가야\\덩이쇠(화폐처럼 사용).png": {
-    "total": 1,
+    "total": 2,
     "correct": 0
   },
   "legacy_images\\3.청동기\\거친무늬거울.png": {
@@ -76,11 +76,11 @@
     "correct": 1
   },
   "legacy_images\\2.신석기\\빗살무늬토기.png": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "legacy_images\\6.고구려\\충주 중원 고구려비(국내 유일 고구려비).png": {
-    "total": 1,
+    "total": 2,
     "correct": 0
   },
   "legacy_images\\4.철기\\진무늬거울.png": {
@@ -128,12 +128,12 @@
     "correct": 0
   },
   "legacy_images\\9.가야\\토제방울.png": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "legacy_images\\7.백제\\부여 정림사지 5층 석탑(소정방의 낙서).png": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "legacy_images\\2.신석기\\이음낚시바늘.png": {
     "total": 1,
@@ -156,8 +156,8 @@
     "correct": 0
   },
   "legacy_images\\7.백제\\진묘수와 금제 관식.png": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "legacy_images\\10.발해\\이불병좌상.png": {
     "total": 1,
@@ -168,7 +168,7 @@
     "correct": 1
   },
   "legacy_images\\8.신라\\이차돈 순교비.png": {
-    "total": 1,
+    "total": 2,
     "correct": 0
   },
   "legacy_images\\11.통일신라\\석굴안 본존불.png": {
@@ -188,6 +188,30 @@
     "correct": 0
   },
   "legacy_images\\1.구석기\\뗀석기_주먹도끼.png": {
+    "total": 1,
+    "correct": 1
+  },
+  "조선시대 중앙 부서|성균관|조선 최고의 국립 교육 기관": {
+    "total": 4,
+    "correct": 4
+  },
+  "조선시대 중앙 부서|성균관|대사성(본청) + 대성전(제사공간), 명륜당(교육공간) => 향교와 구조 비슷함": {
+    "total": 2,
+    "correct": 2
+  },
+  "조선시대 중앙 부서|성균관|{'입학자격': '소과에 합격한 생원, 진사'}": {
+    "total": 1,
+    "correct": 1
+  },
+  "경복궁과 덕수궁(경운궁)|경복궁|임진왜란때 불탔던 것을 흥선 대원군때 증건": {
+    "total": 1,
+    "correct": 1
+  },
+  "경복궁과 덕수궁(경운궁)|경복궁|북궐이라고도 불림": {
+    "total": 1,
+    "correct": 1
+  },
+  "조선시대 중앙 부서|승정원|왕의 비서기관으로 왕명을 출납하였다": {
     "total": 1,
     "correct": 1
   }
