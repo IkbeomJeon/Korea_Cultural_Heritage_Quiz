@@ -529,6 +529,10 @@ class QuizApp:
         
         choices = current_data['choices']
         
+        # 가장 긴 텍스트 길이 계산
+        max_length = max(len(choice) for choice in choices) if choices else 10
+        button_width = max(12, min(max_length + 2, 30))  # 최소 12, 최대 30
+        
         # 한 줄에 3개씩 배치
         for i, choice in enumerate(choices):
             row = i // 3
@@ -537,8 +541,9 @@ class QuizApp:
             btn = tk.Button(buttons_frame, text=choice,
                           command=lambda c=choice: self.check_choice_answer(c),
                           font=("맑은 고딕", 11),
-                          width=15, height=2,
-                          bg='white', relief='solid', bd=1)
+                          width=button_width, height=2,
+                          bg='white', relief='solid', bd=1,
+                          wraplength=button_width * 8)  # 글자 길이에 따라 자동 줄바꿈
             btn.grid(row=row, column=col, padx=8, pady=8)
     
     def check_choice_answer(self, user_answer):
@@ -580,6 +585,11 @@ class QuizApp:
         result_frame = tk.Frame(self.root)
         result_frame.pack(expand=True)
         
+        # 문제 다시 표시
+        tk.Label(result_frame, text=f"문제: {question}",
+                font=("맑은 고딕", 12),
+                wraplength=600).pack(pady=10)
+
         if is_correct:
             # 정답
             tk.Label(result_frame, text="✓ 정답!",
@@ -591,13 +601,10 @@ class QuizApp:
                     font=("맑은 고딕", 24, "bold"),
                     fg='red').pack(pady=20)
             tk.Label(result_frame, text=f"정답: {correct_answer}",
+                    fg='blue',
                     font=("맑은 고딕", 16)).pack(pady=10)
         
-        # 문제 다시 표시
-        tk.Label(result_frame, text=f"문제: {question}",
-                font=("맑은 고딕", 12),
-                fg='blue',
-                wraplength=600).pack(pady=10)
+    
         
         # 통계 정보 표시
         current_data = self.quiz_data[self.current_question]

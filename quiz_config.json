@@ -10,16 +10,16 @@
     "신라",
     "가야",
     "발해",
-    "통일신라"
+    "통일신라",
+    "조선"
   ],
   "accuracy_filter": 100,
   "show_artifact_name": false,
   "auto_next_delay": 1.5,
-  "window_geometry": "742x863+556+50",
+  "window_geometry": "991x974+406+3",
   "prioritize_wrong_answers": true,
   "quiz_mode": "choice",
   "selected_choice_categories": [
-    "조선시대 중앙 부서",
-    "경복궁과 덕수궁(경운궁)"
+    "실학자 저서"
   ]
 }
