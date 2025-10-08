@@ -1,16 +1,14 @@
 {
   "selected_categories": [
-    "구석기",
-    "신석기",
-    "청동기"
+    "신라"
   ],
   "accuracy_filter": 100,
-  "show_artifact_name": true,
+  "show_artifact_name": false,
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
-  "quiz_mode": "artifact",
+  "quiz_mode": "choice",
   "window_geometry": "700x970+678+29",
   "selected_choice_categories": [
-    "인물_실학파"
+    "역사서"
   ]
 }
