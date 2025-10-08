@@ -1,14 +1,27 @@
 {
   "selected_categories": [
-    "신라"
+    "구석기",
+    "신석기",
+    "청동기",
+    "철기",
+    "동예",
+    "고구려",
+    "백제",
+    "신라",
+    "가야",
+    "발해",
+    "통일신라",
+    "고려",
+    "조선",
+    "무덤"
   ],
   "accuracy_filter": 100,
   "show_artifact_name": false,
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
-  "quiz_mode": "choice",
+  "quiz_mode": "artifact",
   "window_geometry": "914x970+591+14",
   "selected_choice_categories": [
-    "농서"
+    "조선시대 신분, 직책"
   ]
 }
