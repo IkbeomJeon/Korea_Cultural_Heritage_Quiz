@@ -19,9 +19,9 @@
   "show_artifact_name": false,
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
-  "quiz_mode": "artifact",
+  "quiz_mode": "choice",
   "window_geometry": "914x970+591+14",
   "selected_choice_categories": [
-    "조선시대 신분, 직책"
+    "역사서"
   ]
 }
