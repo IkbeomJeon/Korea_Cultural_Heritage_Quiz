@@ -38,6 +38,9 @@ class QuizApp:
         self.total_questions = 0
         self.quiz_mode = None  # 'artifact' or 'choice'
         
+        # 사용자 답변 기록 (이전 문제로 돌아갈 때 사용)
+        self.user_answers = []
+        
         # 타이머 ID
         self.after_id = None
         
@@ -394,6 +397,7 @@ class QuizApp:
         self.current_question = 0
         self.correct_count = 0
         self.total_questions = len(self.quiz_data)
+        self.user_answers = []  # 답변 기록 초기화
         self.show_choice_quiz_screen()
     
     def prepare_choice_quiz_data(self, selected_categories):
@@ -441,27 +445,25 @@ class QuizApp:
                         'accuracy': accuracy
                     })
         
+        # 먼저 완전히 랜덤 섞기 (모든 문제를 무작위로)
+        random.shuffle(all_questions)
+        print(f"[DEBUG] 초기 랜덤 섞기 후 첫 5문제:")
+        for i, q in enumerate(all_questions[:5]):
+            print(f"  {i+1}. [{q['category']}] {q['answer']}: {q['question'][:30]}... (정답률: {q['accuracy']:.1f}%)")
+        
         # 오답률 우선보기 옵션 적용
         if self.config.get('prioritize_wrong_answers', False):
-            # 먼저 랜덤 섞기 (같은 정답률끼리 랜덤하게)
-            random.shuffle(all_questions)
-            # 그 다음 정답률 낮은 순으로 정렬 (Python의 sort는 stable sort라 같은 값은 기존 순서 유지)
+            # 정답률 낮은 순으로 정렬 (같은 정답률은 위의 랜덤 순서 유지)
             all_questions.sort(key=lambda x: x['accuracy'])
-            print(f"[DEBUG] 오답률 우선보기 활성화 - 정답률 순으로 정렬 (같은 정답률은 랜덤)")
+            print(f"[DEBUG] 오답률 우선보기 활성화 - 정답률 순 정렬 후 첫 5문제:")
+            for i, q in enumerate(all_questions[:5]):
+                print(f"  {i+1}. [{q['category']}] {q['answer']}: {q['question'][:30]}... (정답률: {q['accuracy']:.1f}%)")
         else:
-            # 완전히 랜덤 섞기 (모든 카테고리의 문제가 섞임)
-            print(f"[DEBUG] 랜덤 섞기 전 첫 3문제:")
-            for i, q in enumerate(all_questions[:3]):
-                print(f"  {i+1}. {q['answer']}: {q['question'][:30]}...")
-            
-            random.shuffle(all_questions)
-            
-            print(f"[DEBUG] 랜덤 섞기 후 첫 3문제:")
-            for i, q in enumerate(all_questions[:3]):
-                print(f"  {i+1}. {q['answer']}: {q['question'][:30]}...")
+            print(f"[DEBUG] 랜덤 모드 - 섞인 순서 그대로 사용")
         
         self.quiz_data = all_questions
         print(f"[DEBUG] 총 {len(self.quiz_data)}개 문제 준비 완료")
+
     
     def show_choice_quiz_screen(self):
         """선지맞추기 퀴즈 화면 표시"""
@@ -472,6 +474,27 @@ class QuizApp:
         # 창 제목 업데이트
         self.root.title(f"{self.current_question + 1}/{self.total_questions}")
         
+        # 네비게이션 버튼 프레임
+        nav_frame = tk.Frame(self.root)
+        nav_frame.pack(pady=10, fill='x', padx=20)
+        
+        # 이전 버튼
+        prev_btn = tk.Button(nav_frame, text="← 이전", 
+                            command=self.prev_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question > 0 else 'disabled')
+        prev_btn.pack(side='left')
+        
+        # 종료 버튼
+        exit_btn = tk.Button(nav_frame, text="종료",
+                            command=self.confirm_exit_to_home,
+                            font=("맑은 고딕", 10),
+                            bg="#f44336", fg="white",
+                            padx=15, pady=5)
+        exit_btn.pack(side='right')
+        
         current_data = self.quiz_data[self.current_question]
         
         # 카테고리 표시
@@ -479,7 +502,7 @@ class QuizApp:
                                  text=f"📁 {current_data['category']}",
                                  font=("맑은 고딕", 11),
                                  fg='gray')
-        category_label.pack(pady=(20, 10))
+        category_label.pack(pady=(10, 10))
         
         # 정답률 표시
         stats_key = current_data['stats_key']
@@ -558,17 +581,31 @@ class QuizApp:
         # 정답 여부
         is_correct = (user_answer.strip() == correct_answer)
         
-        # 통계 업데이트
-        if stats_key not in self.stats:
-            self.stats[stats_key] = {'total': 0, 'correct': 0}
-        
-        self.stats[stats_key]['total'] += 1
-        if is_correct:
-            self.stats[stats_key]['correct'] += 1
-            self.correct_count += 1
-        
-        # 통계 저장
-        self.save_stats()
+        # 답변 기록 저장
+        if self.current_question < len(self.user_answers):
+            # 이미 답변한 문제 (이전 버튼으로 돌아온 경우) - 통계 업데이트 안함
+            self.user_answers[self.current_question] = {
+                'answer': user_answer,
+                'is_correct': is_correct
+            }
+        else:
+            # 새로운 문제 - 통계 업데이트
+            self.user_answers.append({
+                'answer': user_answer,
+                'is_correct': is_correct
+            })
+            
+            # 통계 업데이트
+            if stats_key not in self.stats:
+                self.stats[stats_key] = {'total': 0, 'correct': 0}
+            
+            self.stats[stats_key]['total'] += 1
+            if is_correct:
+                self.stats[stats_key]['correct'] += 1
+                self.correct_count += 1
+            
+            # 통계 저장
+            self.save_stats()
         
         # 피드백 표시
         self.show_choice_feedback(is_correct, correct_answer, current_data['question'])
@@ -581,14 +618,32 @@ class QuizApp:
         
         self.root.title(f"{self.current_question + 1}/{self.total_questions}")
         
+        # 네비게이션 버튼 프레임
+        nav_frame = tk.Frame(self.root)
+        nav_frame.pack(pady=10, fill='x', padx=20)
+        
+        # 이전 버튼
+        prev_btn = tk.Button(nav_frame, text="← 이전", 
+                            command=self.prev_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question > 0 else 'disabled')
+        prev_btn.pack(side='left')
+        
+        # 종료 버튼
+        exit_btn = tk.Button(nav_frame, text="종료",
+                            command=self.confirm_exit_to_home,
+                            font=("맑은 고딕", 10),
+                            bg="#f44336", fg="white",
+                            padx=15, pady=5)
+        exit_btn.pack(side='right')
+        
         # 결과 프레임
         result_frame = tk.Frame(self.root)
         result_frame.pack(expand=True)
         
-        # 문제 다시 표시
-        tk.Label(result_frame, text=f"문제: {question}",
-                font=("맑은 고딕", 12),
-                wraplength=600).pack(pady=10)
+        
 
         if is_correct:
             # 정답
@@ -600,10 +655,15 @@ class QuizApp:
             tk.Label(result_frame, text="✗ 오답",
                     font=("맑은 고딕", 24, "bold"),
                     fg='red').pack(pady=20)
-            tk.Label(result_frame, text=f"정답: {correct_answer}",
-                    fg='blue',
+           
+        # 문제 다시 표시
+        tk.Label(result_frame, text=f"문제: {question}",
+                font=("맑은 고딕", 12),
+                wraplength=600).pack(pady=10)
+                
+        tk.Label(result_frame, text=f"정답: {correct_answer}",
+                            fg='blue',
                     font=("맑은 고딕", 16)).pack(pady=10)
-        
     
         
         # 통계 정보 표시
@@ -658,6 +718,44 @@ class QuizApp:
             # 다음 문제 표시
             self.show_choice_quiz_screen()
     
+    def prev_question(self):
+        """이전 문제로 돌아가기"""
+        if self.current_question <= 0:
+            return
+        
+        # 타이머 취소
+        if self.after_id:
+            self.root.after_cancel(self.after_id)
+            self.after_id = None
+        
+        # 이벤트 바인딩 해제
+        self.root.unbind('<Button-1>')
+        self.root.unbind('<Key>')
+        
+        self.current_question -= 1
+        
+        # 모드에 따라 적절한 화면 표시
+        if self.quiz_mode == 'choice':
+            self.show_choice_quiz_screen()
+        else:
+            self.show_quiz_screen()
+    
+    def confirm_exit_to_home(self):
+        """종료 확인 후 첫 화면으로"""
+        response = messagebox.askyesno("종료 확인", 
+                                      "학습을 종료하고 처음 화면으로 돌아가시겠습니까?")
+        if response:
+            # 타이머 취소
+            if self.after_id:
+                self.root.after_cancel(self.after_id)
+                self.after_id = None
+            
+            # 이벤트 바인딩 해제
+            self.root.unbind('<Button-1>')
+            self.root.unbind('<Key>')
+            
+            self.show_mode_selection_screen()
+    
     def start_artifact_quiz(self):
         """유물맞추기 퀴즈 시작"""
         # 선택된 카테고리 가져오기
@@ -684,6 +782,7 @@ class QuizApp:
         self.current_question = 0
         self.correct_count = 0
         self.total_questions = len(self.quiz_data)
+        self.user_answers = []  # 답변 기록 초기화
         self.show_quiz_screen()
     
     def prepare_quiz_data(self):
@@ -724,12 +823,23 @@ class QuizApp:
         
         # 오답률 우선보기 옵션 적용
         if self.config.get('prioritize_wrong_answers', False):
-            # 정답률 낮은 순으로 정렬 (오답률 높은 순)
-            self.quiz_data.sort(key=lambda x: x['accuracy'])
-        else:
-            # 셔플
+            # 먼저 완전히 랜덤 섞기
             random.shuffle(self.quiz_data)
-    
+            # 그 다음 정답률 낮은 순으로 stable sort (같은 정답률은 랜덤 순서 유지)
+            self.quiz_data.sort(key=lambda x: x['accuracy'])
+            print(f"[DEBUG] 유물맞추기 - 오답률 우선보기 활성화")
+            print(f"[DEBUG] 정답률 순 정렬 (같은 정답률은 랜덤)")
+            for i, q in enumerate(self.quiz_data[:5]):
+                print(f"  {i+1}. [{q['answer']}] {q['artifact_name']} (정답률: {q['accuracy']:.1f}%)")
+        else:
+            # 완전히 랜덤 섞기
+            random.shuffle(self.quiz_data)
+            print(f"[DEBUG] 유물맞추기 - 랜덤 모드")
+            for i, q in enumerate(self.quiz_data[:5]):
+                print(f"  {i+1}. [{q['answer']}] {q['artifact_name']} (정답률: {q['accuracy']:.1f}%)")
+        
+        print(f"[DEBUG] 총 {len(self.quiz_data)}개 유물 문제 준비 완료")
+
     def show_quiz_screen(self):
         """퀴즈 화면 표시"""
         # 기존 위젯 제거
@@ -738,6 +848,27 @@ class QuizApp:
         
         # 창 제목 업데이트
         self.root.title(f"{self.current_question + 1}/{self.total_questions}")
+        
+        # 네비게이션 버튼 프레임
+        nav_frame = tk.Frame(self.root)
+        nav_frame.pack(pady=10, fill='x', padx=20)
+        
+        # 이전 버튼
+        prev_btn = tk.Button(nav_frame, text="← 이전", 
+                            command=self.prev_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question > 0 else 'disabled')
+        prev_btn.pack(side='left')
+        
+        # 종료 버튼
+        exit_btn = tk.Button(nav_frame, text="종료",
+                            command=self.confirm_exit_to_home,
+                            font=("맑은 고딕", 10),
+                            bg="#f44336", fg="white",
+                            padx=15, pady=5)
+        exit_btn.pack(side='right')
         
         current_data = self.quiz_data[self.current_question]
         
@@ -837,17 +968,31 @@ class QuizApp:
         # 정답 여부
         is_correct = (user_answer.strip() == correct_answer)
         
-        # 통계 업데이트
-        if img_path not in self.stats:
-            self.stats[img_path] = {'total': 0, 'correct': 0}
-        
-        self.stats[img_path]['total'] += 1
-        if is_correct:
-            self.stats[img_path]['correct'] += 1
-            self.correct_count += 1
-        
-        # 통계 저장
-        self.save_stats()
+        # 답변 기록 저장
+        if self.current_question < len(self.user_answers):
+            # 이미 답변한 문제 (이전 버튼으로 돌아온 경우) - 통계 업데이트 안함
+            self.user_answers[self.current_question] = {
+                'answer': user_answer,
+                'is_correct': is_correct
+            }
+        else:
+            # 새로운 문제 - 통계 업데이트
+            self.user_answers.append({
+                'answer': user_answer,
+                'is_correct': is_correct
+            })
+            
+            # 통계 업데이트
+            if img_path not in self.stats:
+                self.stats[img_path] = {'total': 0, 'correct': 0}
+            
+            self.stats[img_path]['total'] += 1
+            if is_correct:
+                self.stats[img_path]['correct'] += 1
+                self.correct_count += 1
+            
+            # 통계 저장
+            self.save_stats()
         
         # 피드백 표시
         self.show_feedback(is_correct, correct_answer, artifact_name)
@@ -859,6 +1004,27 @@ class QuizApp:
             widget.destroy()
         
         self.root.title(f"{self.current_question + 1}/{self.total_questions}")
+        
+        # 네비게이션 버튼 프레임
+        nav_frame = tk.Frame(self.root)
+        nav_frame.pack(pady=10, fill='x', padx=20)
+        
+        # 이전 버튼
+        prev_btn = tk.Button(nav_frame, text="← 이전", 
+                            command=self.prev_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question > 0 else 'disabled')
+        prev_btn.pack(side='left')
+        
+        # 종료 버튼
+        exit_btn = tk.Button(nav_frame, text="종료",
+                            command=self.confirm_exit_to_home,
+                            font=("맑은 고딕", 10),
+                            bg="#f44336", fg="white",
+                            padx=15, pady=5)
+        exit_btn.pack(side='right')
         
         # 결과 프레임
         result_frame = tk.Frame(self.root)
@@ -984,7 +1150,7 @@ class QuizApp:
 
 def main():
     print("=" * 60)
-    print("한국사 퀴즈 프로그램 v3.1")
+    print("한국사 퀴즈 프로그램 v3.2")
     print("=" * 60)
     
     app = QuizApp()

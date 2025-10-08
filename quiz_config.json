@@ -2,24 +2,15 @@
   "selected_categories": [
     "구석기",
     "신석기",
-    "청동기",
-    "철기",
-    "동예",
-    "고구려",
-    "백제",
-    "신라",
-    "가야",
-    "발해",
-    "통일신라",
-    "조선"
+    "청동기"
   ],
   "accuracy_filter": 100,
-  "show_artifact_name": false,
-  "auto_next_delay": 1.5,
-  "window_geometry": "991x974+406+3",
+  "show_artifact_name": true,
+  "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
-  "quiz_mode": "choice",
+  "quiz_mode": "artifact",
+  "window_geometry": "700x970+678+29",
   "selected_choice_categories": [
-    "실학자 저서"
+    "인물_실학파"
   ]
 }
