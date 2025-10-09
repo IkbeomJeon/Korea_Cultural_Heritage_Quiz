@@ -215,23 +215,23 @@ class ImageCropper:
             output_dir = Path(self.output_folder).resolve() / self.image_name
             output_dir.mkdir(parents=True, exist_ok=True)
             
-            output_path = output_dir / f"{self.crop_index}.png"
+            image_path = output_dir / f"{self.crop_index}.png"
             
             # 저장 시도
             try:
                 # cv2.imwrite로 저장
                 encode_param = [int(cv2.IMWRITE_PNG_COMPRESSION), 3]
-                success = cv2.imwrite(str(output_path), cropped, encode_param)
+                success = cv2.imwrite(str(image_path), cropped, encode_param)
                 
-                if not success or not output_path.exists():
+                if not success or not image_path.exists():
                     # PIL로 재시도
                     rgb_image = cv2.cvtColor(cropped, cv2.COLOR_BGR2RGB)
                     pil_img = Image.fromarray(rgb_image)
-                    pil_img.save(str(output_path))
+                    pil_img.save(str(image_path))
                 
-                if output_path.exists():
-                    file_size = output_path.stat().st_size
-                    print(f"✓ 저장완료 [{self.crop_index}]: {output_path.name} ({file_size:,} bytes)")
+                if image_path.exists():
+                    file_size = image_path.stat().st_size
+                    print(f"✓ 저장완료 [{self.crop_index}]: {image_path.name} ({file_size:,} bytes)")
                     self.crop_index += 1
                 else:
                     print(f"❌ 저장 실패")
@@ -286,8 +286,8 @@ class ImageCropper:
     
     def run(self):
         """메인 실행"""
-        output_path = Path(self.output_folder)
-        output_path.mkdir(parents=True, exist_ok=True)
+        image_path = Path(self.output_folder)
+        image_path.mkdir(parents=True, exist_ok=True)
         
         image_files = self.get_image_files()
         
