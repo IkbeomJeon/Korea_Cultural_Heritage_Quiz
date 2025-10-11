@@ -1896,27 +1896,127 @@
     "correct": 1
   },
   "legacy_images\\13.조선 전기\\혼일강리역대국도지도(태종시기).png": {
-    "total": 1,
-    "correct": 1
+    "total": 3,
+    "correct": 3
   },
   "legacy_images\\13.조선 후기\\창경궁(숙종 시기).png": {
     "total": 1,
     "correct": 0
   },
   "legacy_images\\13.조선 전기\\분청사기(태조~연산군 무렵).png": {
-    "total": 1,
-    "correct": 1
+    "total": 3,
+    "correct": 3
   },
   "legacy_images\\13.조선 후기\\수원화성(정조 시기).png": {
     "total": 1,
     "correct": 1
   },
   "legacy_images\\13.조선 전기\\종묘(태종시기_임진왜란에 소실_광해군 때 복구).png": {
-    "total": 1,
-    "correct": 1
+    "total": 3,
+    "correct": 3
   },
   "legacy_images\\13.조선 후기\\허준의 동의보감(광해군 시기).png": {
     "total": 1,
     "correct": 0
+  },
+  "legacy_images\\13.조선 중기,후기\\김홍도의 풍속화(씨름).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\강희안의 고사관수도(세조시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\동국대지도(영조시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\수원화성(정조 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\신사임당 초충도.png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\창덕궁(태종시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\덕수궁 석조전(고종 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\정약용 거중기(정조 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\김홍도의 풍속화.png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\신동국여지승람(성종 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\혼천의 (세종시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\앙구일부(세종시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\천상열차분야지도.png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\백두산 정계비(숙종 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\신윤복의 풍속화(정조 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\창경궁(숙종 시기).png": {
+    "total": 2,
+    "correct": 1
+  },
+  "legacy_images\\13.조선 전기\\백운동서원_소수서원(중종 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\허준의 동의보감(광해군 시기).png": {
+    "total": 2,
+    "correct": 1
+  },
+  "legacy_images\\13.조선 전기\\경복궁(태조시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 전기\\몽유도원도(세종시기_안견이 그린 안평대군의 꿈).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\삼전도 비(인조시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\환구단(고종 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\탕평비(영조 시기).png": {
+    "total": 2,
+    "correct": 2
+  },
+  "legacy_images\\13.조선 중기,후기\\정선 진경산수화.png": {
+    "total": 2,
+    "correct": 1
+  },
+  "legacy_images\\13.조선 중기,후기\\금강전도(영조 시기).png": {
+    "total": 2,
+    "correct": 2
   }
 }
