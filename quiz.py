@@ -93,9 +93,9 @@ class QuizApp:
     
     def load_categories(self):
         """output 폴더에서 카테고리 로드"""
-        output_path = Path("output")
+        output_path = Path("legacy_images")
         if not output_path.exists():
-            print("output 폴더가 없습니다.")
+            print("legacy_images 폴더가 없습니다.")
             return
         
         # 숫자 기준으로 정렬
