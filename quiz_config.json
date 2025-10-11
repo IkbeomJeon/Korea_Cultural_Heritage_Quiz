@@ -12,16 +12,15 @@
     "발해",
     "통일신라",
     "고려",
-    "조선",
-    "무덤"
+    "조선"
   ],
   "accuracy_filter": 100,
   "show_artifact_name": false,
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
   "quiz_mode": "choice",
-  "window_geometry": "914x970+591+14",
+  "window_geometry": "913x1002+505+14",
   "selected_choice_categories": [
-    "역사서"
+    "조선시대 신분, 직업, 직책"
   ]
 }
