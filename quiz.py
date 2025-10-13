@@ -445,21 +445,31 @@ class QuizApp:
                         'accuracy': accuracy
                     })
         
-        # 먼저 완전히 랜덤 섞기 (모든 문제를 무작위로)
-        random.shuffle(all_questions)
-        print(f"[DEBUG] 초기 랜덤 섞기 후 첫 5문제:")
-        for i, q in enumerate(all_questions[:5]):
-            print(f"  {i+1}. [{q['category']}] {q['answer']}: {q['question'][:30]}... (정답률: {q['accuracy']:.1f}%)")
+        # 아직 풀지 않은 문제와 푼 문제 분리
+        unsolved = []
+        solved = []
+        
+        for q in all_questions:
+            stats_key = q['stats_key']
+            if stats_key in self.stats and self.stats[stats_key]['total'] > 0:
+                solved.append(q)
+            else:
+                unsolved.append(q)
+        
+        # 아직 풀지 않은 문제는 랜덤 섞기
+        random.shuffle(unsolved)
         
         # 오답률 우선보기 옵션 적용
         if self.config.get('prioritize_wrong_answers', False):
-            # 정답률 낮은 순으로 정렬 (같은 정답률은 위의 랜덤 순서 유지)
-            all_questions.sort(key=lambda x: x['accuracy'])
-            print(f"[DEBUG] 오답률 우선보기 활성화 - 정답률 순 정렬 후 첫 5문제:")
-            for i, q in enumerate(all_questions[:5]):
-                print(f"  {i+1}. [{q['category']}] {q['answer']}: {q['question'][:30]}... (정답률: {q['accuracy']:.1f}%)")
+            random.shuffle(solved)  # 이 줄 추가!
+            # 푼 문제: 정답률 낮은 순 -> 같으면 푼 횟수 적은 순
+            solved.sort(key=lambda x: (x['accuracy'], self.stats[x['stats_key']]['total']))
         else:
-            print(f"[DEBUG] 랜덤 모드 - 섞인 순서 그대로 사용")
+            # 랜덤 모드: 푼 문제도 랜덤
+            random.shuffle(solved)
+        
+        # 아직 안 푼 문제를 먼저, 그 다음 푼 문제
+        all_questions = unsolved + solved
         
         self.quiz_data = all_questions
         print(f"[DEBUG] 총 {len(self.quiz_data)}개 문제 준비 완료")
@@ -478,18 +488,31 @@ class QuizApp:
         nav_frame = tk.Frame(self.root)
         nav_frame.pack(pady=10, fill='x', padx=20)
         
+        # 왼쪽: 이전/다음 버튼
+        left_nav = tk.Frame(nav_frame)
+        left_nav.pack(side='left')
+        
         # 이전 버튼
-        prev_btn = tk.Button(nav_frame, text="← 이전", 
+        prev_btn = tk.Button(left_nav, text="← 이전", 
                             command=self.prev_question,
                             font=("맑은 고딕", 10),
                             bg="#9E9E9E", fg="white",
                             padx=15, pady=5,
                             state='normal' if self.current_question > 0 else 'disabled')
-        prev_btn.pack(side='left')
+        prev_btn.pack(side='left', padx=(0, 5))
+        
+        # 다음 버튼
+        next_btn = tk.Button(left_nav, text="다음 →", 
+                            command=self.next_choice_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question < self.total_questions - 1 else 'disabled')
+        next_btn.pack(side='left')
         
         # 종료 버튼
         exit_btn = tk.Button(nav_frame, text="종료",
-                            command=self.confirm_exit_to_home,
+                            command=self.confirm_exit_to_setup,
                             font=("맑은 고딕", 10),
                             bg="#f44336", fg="white",
                             padx=15, pady=5)
@@ -622,18 +645,31 @@ class QuizApp:
         nav_frame = tk.Frame(self.root)
         nav_frame.pack(pady=10, fill='x', padx=20)
         
+        # 왼쪽: 이전/다음 버튼
+        left_nav = tk.Frame(nav_frame)
+        left_nav.pack(side='left')
+        
         # 이전 버튼
-        prev_btn = tk.Button(nav_frame, text="← 이전", 
+        prev_btn = tk.Button(left_nav, text="← 이전", 
                             command=self.prev_question,
                             font=("맑은 고딕", 10),
                             bg="#9E9E9E", fg="white",
                             padx=15, pady=5,
                             state='normal' if self.current_question > 0 else 'disabled')
-        prev_btn.pack(side='left')
+        prev_btn.pack(side='left', padx=(0, 5))
+        
+        # 다음 버튼
+        next_btn = tk.Button(left_nav, text="다음 →", 
+                            command=self.next_choice_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question < self.total_questions - 1 else 'disabled')
+        next_btn.pack(side='left')
         
         # 종료 버튼
         exit_btn = tk.Button(nav_frame, text="종료",
-                            command=self.confirm_exit_to_home,
+                            command=self.confirm_exit_to_setup,
                             font=("맑은 고딕", 10),
                             bg="#f44336", fg="white",
                             padx=15, pady=5)
@@ -740,10 +776,10 @@ class QuizApp:
         else:
             self.show_quiz_screen()
     
-    def confirm_exit_to_home(self):
-        """종료 확인 후 첫 화면으로"""
+    def confirm_exit_to_setup(self):
+        """종료 확인 후 해당 모드의 설정 화면으로"""
         response = messagebox.askyesno("종료 확인", 
-                                      "학습을 종료하고 처음 화면으로 돌아가시겠습니까?")
+                                      "학습을 종료하고 설정 화면으로 돌아가시겠습니까?")
         if response:
             # 타이머 취소
             if self.after_id:
@@ -754,7 +790,11 @@ class QuizApp:
             self.root.unbind('<Button-1>')
             self.root.unbind('<Key>')
             
-            self.show_mode_selection_screen()
+            # 모드에 따라 해당 설정 화면으로 이동
+            if self.quiz_mode == 'choice':
+                self.show_choice_setup_screen()
+            else:
+                self.show_artifact_setup_screen()
     
     def start_artifact_quiz(self):
         """유물맞추기 퀴즈 시작"""
@@ -822,21 +862,31 @@ class QuizApp:
                     })
         
         # 오답률 우선보기 옵션 적용
+        # 아직 풀지 않은 문제와 푼 문제 분리
+        unsolved = []
+        solved = []
+        
+        for q in self.quiz_data:
+            img_path = q['image']
+            if img_path in self.stats and self.stats[img_path]['total'] > 0:
+                solved.append(q)
+            else:
+                unsolved.append(q)
+        
+        # 아직 풀지 않은 문제는 랜덤 섞기
+        random.shuffle(unsolved)
+        
+        # 오답률 우선보기 옵션 적용
         if self.config.get('prioritize_wrong_answers', False):
-            # 먼저 완전히 랜덤 섞기
-            random.shuffle(self.quiz_data)
-            # 그 다음 정답률 낮은 순으로 stable sort (같은 정답률은 랜덤 순서 유지)
-            self.quiz_data.sort(key=lambda x: x['accuracy'])
-            print(f"[DEBUG] 유물맞추기 - 오답률 우선보기 활성화")
-            print(f"[DEBUG] 정답률 순 정렬 (같은 정답률은 랜덤)")
-            for i, q in enumerate(self.quiz_data[:5]):
-                print(f"  {i+1}. [{q['answer']}] {q['artifact_name']} (정답률: {q['accuracy']:.1f}%)")
+            random.shuffle(solved)  # 이 줄 추가!
+            # 푼 문제: 정답률 낮은 순 -> 같으면 푼 횟수 적은 순
+            solved.sort(key=lambda x: (x['accuracy'], self.stats[x['image']]['total']))
         else:
-            # 완전히 랜덤 섞기
-            random.shuffle(self.quiz_data)
-            print(f"[DEBUG] 유물맞추기 - 랜덤 모드")
-            for i, q in enumerate(self.quiz_data[:5]):
-                print(f"  {i+1}. [{q['answer']}] {q['artifact_name']} (정답률: {q['accuracy']:.1f}%)")
+            # 랜덤 모드: 푼 문제도 랜덤
+            random.shuffle(solved)
+        
+        # 아직 안 푼 문제를 먼저, 그 다음 푼 문제
+        self.quiz_data = unsolved + solved
         
         print(f"[DEBUG] 총 {len(self.quiz_data)}개 유물 문제 준비 완료")
 
@@ -853,18 +903,31 @@ class QuizApp:
         nav_frame = tk.Frame(self.root)
         nav_frame.pack(pady=10, fill='x', padx=20)
         
+        # 왼쪽: 이전/다음 버튼
+        left_nav = tk.Frame(nav_frame)
+        left_nav.pack(side='left')
+        
         # 이전 버튼
-        prev_btn = tk.Button(nav_frame, text="← 이전", 
+        prev_btn = tk.Button(left_nav, text="← 이전", 
                             command=self.prev_question,
                             font=("맑은 고딕", 10),
                             bg="#9E9E9E", fg="white",
                             padx=15, pady=5,
                             state='normal' if self.current_question > 0 else 'disabled')
-        prev_btn.pack(side='left')
+        prev_btn.pack(side='left', padx=(0, 5))
+        
+        # 다음 버튼
+        next_btn = tk.Button(left_nav, text="다음 →", 
+                            command=self.next_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question < self.total_questions - 1 else 'disabled')
+        next_btn.pack(side='left')
         
         # 종료 버튼
         exit_btn = tk.Button(nav_frame, text="종료",
-                            command=self.confirm_exit_to_home,
+                            command=self.confirm_exit_to_setup,
                             font=("맑은 고딕", 10),
                             bg="#f44336", fg="white",
                             padx=15, pady=5)
@@ -1009,18 +1072,31 @@ class QuizApp:
         nav_frame = tk.Frame(self.root)
         nav_frame.pack(pady=10, fill='x', padx=20)
         
+        # 왼쪽: 이전/다음 버튼
+        left_nav = tk.Frame(nav_frame)
+        left_nav.pack(side='left')
+        
         # 이전 버튼
-        prev_btn = tk.Button(nav_frame, text="← 이전", 
+        prev_btn = tk.Button(left_nav, text="← 이전", 
                             command=self.prev_question,
                             font=("맑은 고딕", 10),
                             bg="#9E9E9E", fg="white",
                             padx=15, pady=5,
                             state='normal' if self.current_question > 0 else 'disabled')
-        prev_btn.pack(side='left')
+        prev_btn.pack(side='left', padx=(0, 5))
+        
+        # 다음 버튼
+        next_btn = tk.Button(left_nav, text="다음 →", 
+                            command=self.next_question,
+                            font=("맑은 고딕", 10),
+                            bg="#9E9E9E", fg="white",
+                            padx=15, pady=5,
+                            state='normal' if self.current_question < self.total_questions - 1 else 'disabled')
+        next_btn.pack(side='left')
         
         # 종료 버튼
         exit_btn = tk.Button(nav_frame, text="종료",
-                            command=self.confirm_exit_to_home,
+                            command=self.confirm_exit_to_setup,
                             font=("맑은 고딕", 10),
                             bg="#f44336", fg="white",
                             padx=15, pady=5)
@@ -1139,7 +1215,7 @@ class QuizApp:
                  padx=20, pady=10).pack(side='left', padx=10)
         
         tk.Button(btn_frame, text="종료",
-            command=self.on_closing,
+            command=self.show_mode_selection_screen,
             font=("맑은 고딕", 12),
             bg="#f44336", fg="white",
             padx=20, pady=10).pack(side='left', padx=10)
@@ -1150,7 +1226,7 @@ class QuizApp:
 
 def main():
     print("=" * 60)
-    print("한국사 퀴즈 프로그램 v3.2")
+    print("한국사 퀴즈 프로그램 v3.3")
     print("=" * 60)
     
     app = QuizApp()

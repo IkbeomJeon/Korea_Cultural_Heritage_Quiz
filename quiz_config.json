@@ -1,5 +1,17 @@
 {
   "selected_categories": [
+    "구석기",
+    "신석기",
+    "청동기",
+    "철기",
+    "동예",
+    "고구려",
+    "백제",
+    "신라",
+    "가야",
+    "발해",
+    "통일신라",
+    "고려",
     "조선 전기",
     "조선 중기,후기"
   ],
@@ -8,8 +20,8 @@
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
   "quiz_mode": "choice",
-  "window_geometry": "913x845+498+29",
+  "window_geometry": "915x955+498+29",
   "selected_choice_categories": [
-    "국외독립운동"
+    "학교"
   ]
 }
