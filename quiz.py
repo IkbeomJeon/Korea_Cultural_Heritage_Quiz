@@ -585,8 +585,8 @@ class QuizApp:
         
         # 한 줄에 3개씩 배치
         for i, choice in enumerate(choices):
-            row = i // 3
-            col = i % 3
+            row = i // 4
+            col = i % 4
             
             btn = tk.Button(buttons_frame, text=choice,
                           command=lambda c=choice: self.check_choice_answer(c),
