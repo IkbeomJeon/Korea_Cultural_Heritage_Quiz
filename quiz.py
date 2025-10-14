@@ -330,26 +330,30 @@ class QuizApp:
         tk.Label(self.root, text="학습할 주제 선택:", 
                 font=("맑은 고딕", 12)).pack(pady=10)
         
-        # 체크박스 프레임
+        # 체크박스 프레임 (3열 그리드)
         checkbox_frame = tk.Frame(self.root)
         checkbox_frame.pack(pady=10)
-        
+
         # 체크박스 변수 저장
         self.choice_checkbox_vars = {}
-        
+
         # YAML 데이터의 대분류(키)로 체크박스 생성
         choice_categories = list(self.choice_data.keys())
-        
+
+        # 3열로 배치
         for i, category in enumerate(choice_categories):
+            row = i // 2
+            col = i % 2
+            
             var = tk.BooleanVar()
             # 이전 설정 복원
             if category in self.config.get('selected_choice_categories', []):
                 var.set(True)
             
             cb = tk.Checkbutton(checkbox_frame, text=category, 
-                               variable=var, font=("맑은 고딕", 11),
-                               anchor='w')
-            cb.pack(anchor='w', padx=20, pady=5)
+                            variable=var, font=("맑은 고딕", 11),
+                            anchor='w')
+            cb.grid(row=row, column=col, padx=10, pady=5, sticky='w')  # ← grid() 사용 (3열)
             self.choice_checkbox_vars[category] = var
         
         # 버튼 프레임
@@ -841,8 +845,7 @@ class QuizApp:
             # 이미지 파일 찾기 (png, jpg, jpeg)
             for img_file in folder_path.glob("*"):
                 if img_file.suffix.lower() in ['.png', '.jpg', '.jpeg']:
-                    img_path = str(img_file)
-                    
+                    img_path = str(img_file).replace('\\', '/')  # 경로 구분자 통일
                     # 정답률 계산
                     accuracy = 100  # 기본값 (통계 없는 경우)
                     if img_path in self.stats:

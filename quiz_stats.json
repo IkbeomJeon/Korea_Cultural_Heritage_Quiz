@@ -1,5 +1,5 @@
 {
-  "legacy_images\\1.구석기\\뗀석기_주먹도끼.png": {
+  "legacy_images/1.구석기/뗀석기_주먹도끼.png": {
     "total": 4,
     "correct": 4
   },
@@ -7,247 +7,247 @@
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\3.청동기\\농경문.png": {
+  "legacy_images/3.청동기/농경문.png": {
     "total": 4,
     "correct": 3
   },
-  "legacy_images\\3.청동기\\송국리식토기.png": {
+  "legacy_images/3.청동기/송국리식토기.png": {
     "total": 6,
     "correct": 5
   },
-  "legacy_images\\3.청동기\\거친무늬거울.png": {
+  "legacy_images/3.청동기/거친무늬거울.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\2.신석기\\조개껍데기가면.png": {
+  "legacy_images/2.신석기/조개껍데기가면.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\2.신석기\\이음낚시바늘.png": {
+  "legacy_images/2.신석기/이음낚시바늘.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\2.신석기\\갈팔과 갈돌.png": {
+  "legacy_images/2.신석기/갈팔과 갈돌.png": {
     "total": 4,
     "correct": 4
   },
-  "legacy_images\\3.청동기\\반달돌칼.png": {
+  "legacy_images/3.청동기/반달돌칼.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\3.청동기\\비파형 동검.png": {
+  "legacy_images/3.청동기/비파형 동검.png": {
     "total": 4,
     "correct": 4
   },
-  "legacy_images\\2.신석기\\빗살무늬토기.png": {
+  "legacy_images/2.신석기/빗살무늬토기.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\1.구석기\\흥수아이.png": {
+  "legacy_images/1.구석기/흥수아이.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\2.신석기\\움집.png": {
+  "legacy_images/2.신석기/움집.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\1.구석기\\슴베찌르개.png": {
+  "legacy_images/1.구석기/슴베찌르개.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\3.청동기\\미송리식토기.png": {
+  "legacy_images/3.청동기/미송리식토기.png": {
     "total": 4,
     "correct": 4
   },
-  "legacy_images\\13.조선\\경복궁(태조시기).png": {
+  "legacy_images/13.조선/경복궁(태조시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\개성 경천사지 10층 석탑(원나라 영향).png": {
+  "legacy_images/12.고려/개성 경천사지 10층 석탑(원나라 영향).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\안동 이천동 마애 여래 입상(제비원 석불).png": {
+  "legacy_images/12.고려/안동 이천동 마애 여래 입상(제비원 석불).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선\\수원화성(정조 시기).png": {
+  "legacy_images/13.조선/수원화성(정조 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\영주 부석사 무량수전(주심포양식).png": {
+  "legacy_images/12.고려/영주 부석사 무량수전(주심포양식).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\상감청자(고려의 독자적 기법).png": {
+  "legacy_images/12.고려/상감청자(고려의 독자적 기법).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선\\창덕궁(태종시기).png": {
+  "legacy_images/13.조선/창덕궁(태종시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\김홍도의 풍속화(씨름).png": {
+  "legacy_images/13.조선/김홍도의 풍속화(씨름).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\창경궁(숙종 시기).png": {
+  "legacy_images/13.조선/창경궁(숙종 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\분청사기(태조~연산군 무렵).png": {
+  "legacy_images/13.조선/분청사기(태조~연산군 무렵).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\백운동서원_소수서원(중종 시기).png": {
+  "legacy_images/13.조선/백운동서원_소수서원(중종 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\예산 수덕사 대웅전(주심포양식).png": {
+  "legacy_images/12.고려/예산 수덕사 대웅전(주심포양식).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\주심포 양식(고려시대에 성행한 건축).png": {
+  "legacy_images/12.고려/주심포 양식(고려시대에 성행한 건축).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\하남 하사창동 철조 석조여래 좌상(대형 철불 유행).png": {
+  "legacy_images/12.고려/하남 하사창동 철조 석조여래 좌상(대형 철불 유행).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\안동 봉정사 극락전(현존 최고 고려 목조 건물_주심포양식).png": {
+  "legacy_images/12.고려/안동 봉정사 극락전(현존 최고 고려 목조 건물_주심포양식).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\황해도 성불사 응진전(다포양식).png": {
+  "legacy_images/12.고려/황해도 성불사 응진전(다포양식).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\순청자.png": {
+  "legacy_images/12.고려/순청자.png": {
     "total": 4,
     "correct": 3
   },
-  "legacy_images\\13.조선\\몽유도원도(세종시기_안견이 그린 안평대군의 꿈).png": {
+  "legacy_images/13.조선/몽유도원도(세종시기_안견이 그린 안평대군의 꿈).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\종묘(태종시기_임진왜란에 소실_광해군 때 복구).png": {
+  "legacy_images/13.조선/종묘(태종시기_임진왜란에 소실_광해군 때 복구).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\강희안의 고사관수도(세조시기).png": {
+  "legacy_images/13.조선/강희안의 고사관수도(세조시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\앙구일부(세종시기).png": {
+  "legacy_images/13.조선/앙구일부(세종시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\정약용 거중기(정조 시기).png": {
+  "legacy_images/13.조선/정약용 거중기(정조 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\정선 진경산수화.png": {
+  "legacy_images/13.조선/정선 진경산수화.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\허준의 동의보감(광해군 시기).png": {
+  "legacy_images/13.조선/허준의 동의보감(광해군 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\동국대지도(영조시기).png": {
+  "legacy_images/13.조선/동국대지도(영조시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\덕수궁 석조전(고종 시기).png": {
+  "legacy_images/13.조선/덕수궁 석조전(고종 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\건원중보 (우리나라 최초의 금속 화폐_성종때).png": {
+  "legacy_images/12.고려/건원중보 (우리나라 최초의 금속 화폐_성종때).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선\\신사임당 초충도.png": {
+  "legacy_images/13.조선/신사임당 초충도.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\탕평비(영조 시기).png": {
+  "legacy_images/13.조선/탕평비(영조 시기).png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\12.고려\\영주 부석사 소조 아미타여래 좌상.png": {
+  "legacy_images/12.고려/영주 부석사 소조 아미타여래 좌상.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\은병(활구_고려시대 고액 화폐_숙종때).png": {
+  "legacy_images/12.고려/은병(활구_고려시대 고액 화폐_숙종때).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\평창 월정사 8각 9층 석탑(송의 영향).png": {
+  "legacy_images/12.고려/평창 월정사 8각 9층 석탑(송의 영향).png": {
     "total": 5,
     "correct": 3
   },
-  "legacy_images\\12.고려\\파주 용미리 마애이물 입상.png": {
+  "legacy_images/12.고려/파주 용미리 마애이물 입상.png": {
     "total": 4,
     "correct": 3
   },
-  "legacy_images\\13.조선\\금강전도(영조 시기).png": {
+  "legacy_images/13.조선/금강전도(영조 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\백두산 정계비(숙종 시기).png": {
+  "legacy_images/13.조선/백두산 정계비(숙종 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\직지심체요절(현존 세계 최고 금속활자본).png": {
+  "legacy_images/12.고려/직지심체요절(현존 세계 최고 금속활자본).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선\\환구단(고종 시기).png": {
+  "legacy_images/13.조선/환구단(고종 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\김홍도의 풍속화.png": {
+  "legacy_images/13.조선/김홍도의 풍속화.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\신동국여지승람(성종 시기).png": {
+  "legacy_images/13.조선/신동국여지승람(성종 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\신윤복의 풍속화(정조 시기).png": {
+  "legacy_images/13.조선/신윤복의 풍속화(정조 시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\팔만대장경(합천 해인사 장경판전).png": {
+  "legacy_images/12.고려/팔만대장경(합천 해인사 장경판전).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\12.고려\\수월관음도(불화).png": {
+  "legacy_images/12.고려/수월관음도(불화).png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\13.조선\\혼천의 (세종시기).png": {
+  "legacy_images/13.조선/혼천의 (세종시기).png": {
     "total": 4,
     "correct": 3
   },
-  "legacy_images\\12.고려\\영주 부석사 소조 여래 좌상.jpg": {
+  "legacy_images/12.고려/영주 부석사 소조 여래 좌상.jpg": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\천상열차분야지도.png": {
+  "legacy_images/13.조선/천상열차분야지도.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선\\혼일강리역대국도지도(태종시기).png": {
+  "legacy_images/13.조선/혼일강리역대국도지도(태종시기).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\13.조선\\삼전도 비(인조시기).png": {
+  "legacy_images/13.조선/삼전도 비(인조시기).png": {
     "total": 4,
     "correct": 2
   },
-  "legacy_images\\12.고려\\논산 관촉사 석조 미륵 보살 입상(은진 미륵).png": {
+  "legacy_images/12.고려/논산 관촉사 석조 미륵 보살 입상(은진 미륵).png": {
     "total": 3,
     "correct": 3
   },
@@ -775,7 +775,7 @@
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\무덤\\6.png": {
+  "legacy_images/무덤/6.png": {
     "total": 1,
     "correct": 1
   },
@@ -823,327 +823,327 @@
     "total": 5,
     "correct": 5
   },
-  "legacy_images\\8.신라\\단양 적성비(충북)_진흥왕.png": {
+  "legacy_images/8.신라/단양 적성비(충북)_진흥왕.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\예산 수덕사 대웅전(맞배지붕+주심포양식).png": {
+  "legacy_images/12.고려/예산 수덕사 대웅전(맞배지붕+주심포양식).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\익산 미륵사지 석탑(한국 석탑중 최고).png": {
+  "legacy_images/7.백제/익산 미륵사지 석탑(한국 석탑중 최고).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\장수왕릉 장군총(중국 지린성).png": {
+  "legacy_images/6.고구려/장수왕릉 장군총(중국 지린성).png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\8.신라\\북한산비(한강)_진흥왕.png": {
+  "legacy_images/8.신라/북한산비(한강)_진흥왕.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\10.발해\\문왕의 넷째 딸 정효공주 묘.png": {
+  "legacy_images/10.발해/문왕의 넷째 딸 정효공주 묘.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\부여 정림사지 5층 석탑(소정방의 낙서).png": {
+  "legacy_images/7.백제/부여 정림사지 5층 석탑(소정방의 낙서).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\진묘수와 금제 관식.png": {
+  "legacy_images/7.백제/진묘수와 금제 관식.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\10.발해\\정혜공주 묘 돌사자.png": {
+  "legacy_images/10.발해/정혜공주 묘 돌사자.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\금동관.png": {
+  "legacy_images/9.가야/금동관.png": {
     "total": 4,
     "correct": 2
   },
-  "legacy_images\\4.철기\\오수전.png": {
+  "legacy_images/4.철기/오수전.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\바퀴 장식 뿔잔.png": {
+  "legacy_images/9.가야/바퀴 장식 뿔잔.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\천마총 금모자.png": {
+  "legacy_images/8.신라/천마총 금모자.png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\7.백제\\사택 지적비.png": {
+  "legacy_images/7.백제/사택 지적비.png": {
     "total": 2,
     "correct": 1
   },
-  "legacy_images\\9.가야\\청동 솥(동복).png": {
+  "legacy_images/9.가야/청동 솥(동복).png": {
     "total": 5,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\진전사지 도의선사탑.png": {
+  "legacy_images/11.통일신라/진전사지 도의선사탑.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\불국사.png": {
+  "legacy_images/11.통일신라/불국사.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\무용총 수렵도.png": {
+  "legacy_images/6.고구려/무용총 수렵도.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\산수무늬 벽돌.png": {
+  "legacy_images/7.백제/산수무늬 벽돌.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\5.동예\\철자형 집터.png": {
+  "legacy_images/5.동예/철자형 집터.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\8.신라\\마운령비(함경도)_진흥왕.png": {
+  "legacy_images/8.신라/마운령비(함경도)_진흥왕.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\수산리 고분 벽화.png": {
+  "legacy_images/6.고구려/수산리 고분 벽화.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\10.발해\\연화문 와당.png": {
+  "legacy_images/10.발해/연화문 와당.png": {
     "total": 1,
     "correct": 0
   },
-  "legacy_images\\12.고려\\하남 하사창동 철조 석조여래 좌상(석굴 암본존불 영향+대형 철불 유행).png": {
+  "legacy_images/12.고려/하남 하사창동 철조 석조여래 좌상(석굴 암본존불 영향+대형 철불 유행).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\금동불 입상(석가탑 내부에서 발견).png": {
+  "legacy_images/11.통일신라/금동불 입상(석가탑 내부에서 발견).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\말머리 가리개.png": {
+  "legacy_images/9.가야/말머리 가리개.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\분황사 모전 석탑(신라 석탑 중 가장 오래됨)_전탑아님!.png": {
+  "legacy_images/8.신라/분황사 모전 석탑(신라 석탑 중 가장 오래됨)_전탑아님!.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\무령왕능(벽돌무덤).png": {
+  "legacy_images/7.백제/무령왕능(벽돌무덤).png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\8.신라\\천마총 금관.png": {
+  "legacy_images/8.신라/천마총 금관.png": {
     "total": 4,
     "correct": 3
   },
-  "legacy_images\\10.발해\\영광탑(벽돌로 만든 전탑).png": {
+  "legacy_images/10.발해/영광탑(벽돌로 만든 전탑).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\기마인물형 뿔잔.png": {
+  "legacy_images/9.가야/기마인물형 뿔잔.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\안동 봉정사 극락전(현존 최고 고려 목조 건물+주심포양식).png": {
+  "legacy_images/12.고려/안동 봉정사 극락전(현존 최고 고려 목조 건물+주심포양식).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\동궁과 월지.png": {
+  "legacy_images/11.통일신라/동궁과 월지.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\사신도(강서대묘).png": {
+  "legacy_images/6.고구려/사신도(강서대묘).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\영주 부석사 무량수전(배흘림기둥+주심포양식).png": {
+  "legacy_images/12.고려/영주 부석사 무량수전(배흘림기둥+주심포양식).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\4.철기\\독무덤.png": {
+  "legacy_images/4.철기/독무덤.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\원성왕릉 무인상(서역과 교류).png": {
+  "legacy_images/11.통일신라/원성왕릉 무인상(서역과 교류).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\무용총 무용도.png": {
+  "legacy_images/6.고구려/무용총 무용도.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\호우명 그릇_광개토대왕.png": {
+  "legacy_images/8.신라/호우명 그릇_광개토대왕.png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\석굴안 본존불.png": {
+  "legacy_images/11.통일신라/석굴안 본존불.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\나전 국화 넝쿨무늬 합.jpg": {
+  "legacy_images/12.고려/나전 국화 넝쿨무늬 합.jpg": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\9산 선문중 하나인 희양산문을 개창한 탑비와 승탑.png": {
+  "legacy_images/11.통일신라/9산 선문중 하나인 희양산문을 개창한 탑비와 승탑.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\부여 능산리사지 석조 사리감.png": {
+  "legacy_images/7.백제/부여 능산리사지 석조 사리감.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\광개토 왕릉비.png": {
+  "legacy_images/6.고구려/광개토 왕릉비.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\무용총 접객도.png": {
+  "legacy_images/6.고구려/무용총 접객도.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\쌍봉사 철감선 사탑.png": {
+  "legacy_images/11.통일신라/쌍봉사 철감선 사탑.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\각저총 씨름도.png": {
+  "legacy_images/6.고구려/각저총 씨름도.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\창녕비(가야)_진흥왕.png": {
+  "legacy_images/8.신라/창녕비(가야)_진흥왕.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\충주 중원 고구려비(국내 유일 고구려비).png": {
+  "legacy_images/6.고구려/충주 중원 고구려비(국내 유일 고구려비).png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\7.백제\\백제 금동 대향로(도쿄, 불로장생).png": {
+  "legacy_images/7.백제/백제 금동 대향로(도쿄, 불로장생).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\7.백제\\서산 용현리 마애여래 삼존상(백제의 미소).png": {
+  "legacy_images/7.백제/서산 용현리 마애여래 삼존상(백제의 미소).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\12.고려\\하남 교산동 약사여래 좌상.jpg": {
+  "legacy_images/12.고려/하남 교산동 약사여래 좌상.jpg": {
     "total": 5,
     "correct": 3
   },
-  "legacy_images\\10.발해\\연화문 와당(aka.수막새).png": {
+  "legacy_images/10.발해/연화문 와당(aka.수막새).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\10.발해\\발해 석등.png": {
+  "legacy_images/10.발해/발해 석등.png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\7.백제\\칠지도.png": {
+  "legacy_images/7.백제/칠지도.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\6.고구려\\금동연가7년명 여래입상.png": {
+  "legacy_images/6.고구려/금동연가7년명 여래입상.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\4.철기\\거푸집.png": {
+  "legacy_images/4.철기/거푸집.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\10.발해\\이불병좌상.png": {
+  "legacy_images/10.발해/이불병좌상.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\감은사지 3층 석탑(신문왕 때 쌍둥이탑).png": {
+  "legacy_images/11.통일신라/감은사지 3층 석탑(신문왕 때 쌍둥이탑).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\덩이쇠(화폐처럼 사용).png": {
+  "legacy_images/9.가야/덩이쇠(화폐처럼 사용).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\4.철기\\다호리 붓.png": {
+  "legacy_images/4.철기/다호리 붓.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\구례 화엄사 사사자 삼층석탑.png": {
+  "legacy_images/11.통일신라/구례 화엄사 사사자 삼층석탑.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\천마도(말 안장).png": {
+  "legacy_images/8.신라/천마도(말 안장).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\양양 진전사지 삼층석탑.png": {
+  "legacy_images/11.통일신라/양양 진전사지 삼층석탑.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\4.철기\\진무늬거울.png": {
+  "legacy_images/4.철기/진무늬거울.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\무구정광대다라니경(현존 최고 목판 인쇄물).png": {
+  "legacy_images/11.통일신라/무구정광대다라니경(현존 최고 목판 인쇄물).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\불국사 3층 석탑(석가탑-무영탑).png": {
+  "legacy_images/11.통일신라/불국사 3층 석탑(석가탑-무영탑).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\가야토기(스에키 토기에 영향).png": {
+  "legacy_images/9.가야/가야토기(스에키 토기에 영향).png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\5.동예\\여자형 집터.png": {
+  "legacy_images/5.동예/여자형 집터.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\8.신라\\첨성대_선덕여왕.png": {
+  "legacy_images/8.신라/첨성대_선덕여왕.png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\9.가야\\토제방울.png": {
+  "legacy_images/9.가야/토제방울.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\4.철기\\명도전.png": {
+  "legacy_images/4.철기/명도전.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\10.발해\\상경부 치미(고구려 영향).png": {
+  "legacy_images/10.발해/상경부 치미(고구려 영향).png": {
     "total": 4,
     "correct": 2
   },
-  "legacy_images\\9.가야\\판갑옷과 투구.png": {
+  "legacy_images/9.가야/판갑옷과 투구.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\기마 인물형 토기.png": {
+  "legacy_images/8.신라/기마 인물형 토기.png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\4.철기\\세형동검.png": {
+  "legacy_images/4.철기/세형동검.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\8.신라\\이차돈 순교비.png": {
+  "legacy_images/8.신라/이차돈 순교비.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\4.철기\\검은간토기.png": {
+  "legacy_images/4.철기/검은간토기.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\8.신라\\황초령비(함경도)_진흥왕.png": {
+  "legacy_images/8.신라/황초령비(함경도)_진흥왕.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\9.가야\\호계사 파사 석탑.png": {
+  "legacy_images/9.가야/호계사 파사 석탑.png": {
     "total": 2,
     "correct": 2
   },
-  "legacy_images\\11.통일신라\\태인사 적인선사 승탑.png": {
+  "legacy_images/11.통일신라/태인사 적인선사 승탑.png": {
     "total": 2,
     "correct": 2
   },
@@ -1792,16 +1792,16 @@
     "correct": 7
   },
   "종교|대종교|항일단체 중광단 결성": {
-    "total": 9,
-    "correct": 6
+    "total": 10,
+    "correct": 7
   },
   "종교|유교|박은식의 유교구신론": {
     "total": 9,
     "correct": 9
   },
   "종교|천도교|만세보 발간, 잡지 개벽 발행": {
-    "total": 10,
-    "correct": 6
+    "total": 11,
+    "correct": 7
   },
   "종교|원불교|새생활 운동": {
     "total": 9,
@@ -1868,154 +1868,154 @@
     "correct": 4
   },
   "국외독립운동|미국|장인환·전명운의 스티븐스 암살 (1908), 스티븐스 = 외교고문, 친일파": {
-    "total": 6,
-    "correct": 6
+    "total": 7,
+    "correct": 7
   },
   "국외독립운동|중국 (상하이)|3.1운동 배경 마련": {
-    "total": 10,
-    "correct": 9
+    "total": 11,
+    "correct": 10
   },
   "국외독립운동|미국|하와이-대조선국민군단": {
     "total": 1,
     "correct": 1
   },
   "국외독립운동|북간도|간민회 (한인 자치단체)": {
-    "total": 11,
-    "correct": 6
+    "total": 13,
+    "correct": 8
   },
   "국외독립운동|북간도|명동학교 (기독교 계열)": {
-    "total": 11,
-    "correct": 7
+    "total": 12,
+    "correct": 8
   },
   "국외독립운동|멕시코|에네켄(애니깽) 농장에서 노동": {
-    "total": 6,
-    "correct": 6
-  },
-  "국외독립운동|중국 (상하이)|파리강화회의에 김규식 파견": {
-    "total": 10,
+    "total": 7,
     "correct": 7
   },
-  "legacy_images\\13.조선 전기\\혼일강리역대국도지도(태종시기).png": {
+  "국외독립운동|중국 (상하이)|파리강화회의에 김규식 파견": {
+    "total": 11,
+    "correct": 8
+  },
+  "legacy_images/13.조선 전기/혼일강리역대국도지도(태종시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 후기\\창경궁(숙종 시기).png": {
+  "legacy_images/13.조선 후기/창경궁(숙종 시기).png": {
     "total": 1,
     "correct": 0
   },
-  "legacy_images\\13.조선 전기\\분청사기(태조~연산군 무렵).png": {
+  "legacy_images/13.조선 전기/분청사기(태조~연산군 무렵).png": {
     "total": 4,
     "correct": 4
   },
-  "legacy_images\\13.조선 후기\\수원화성(정조 시기).png": {
+  "legacy_images/13.조선 후기/수원화성(정조 시기).png": {
     "total": 1,
     "correct": 1
   },
-  "legacy_images\\13.조선 전기\\종묘(태종시기_임진왜란에 소실_광해군 때 복구).png": {
+  "legacy_images/13.조선 전기/종묘(태종시기_임진왜란에 소실_광해군 때 복구).png": {
     "total": 4,
     "correct": 4
   },
-  "legacy_images\\13.조선 후기\\허준의 동의보감(광해군 시기).png": {
+  "legacy_images/13.조선 후기/허준의 동의보감(광해군 시기).png": {
     "total": 1,
     "correct": 0
   },
-  "legacy_images\\13.조선 중기,후기\\김홍도의 풍속화(씨름).png": {
+  "legacy_images/13.조선 중기,후기/김홍도의 풍속화(씨름).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\강희안의 고사관수도(세조시기).png": {
+  "legacy_images/13.조선 전기/강희안의 고사관수도(세조시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\동국대지도(영조시기).png": {
+  "legacy_images/13.조선 중기,후기/동국대지도(영조시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\수원화성(정조 시기).png": {
+  "legacy_images/13.조선 중기,후기/수원화성(정조 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\신사임당 초충도.png": {
+  "legacy_images/13.조선 전기/신사임당 초충도.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\창덕궁(태종시기).png": {
+  "legacy_images/13.조선 전기/창덕궁(태종시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\덕수궁 석조전(고종 시기).png": {
+  "legacy_images/13.조선 중기,후기/덕수궁 석조전(고종 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\정약용 거중기(정조 시기).png": {
+  "legacy_images/13.조선 중기,후기/정약용 거중기(정조 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\김홍도의 풍속화.png": {
+  "legacy_images/13.조선 중기,후기/김홍도의 풍속화.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\신동국여지승람(성종 시기).png": {
+  "legacy_images/13.조선 전기/신동국여지승람(성종 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\혼천의 (세종시기).png": {
+  "legacy_images/13.조선 전기/혼천의 (세종시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\앙구일부(세종시기).png": {
+  "legacy_images/13.조선 전기/앙구일부(세종시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\천상열차분야지도.png": {
+  "legacy_images/13.조선 전기/천상열차분야지도.png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\백두산 정계비(숙종 시기).png": {
+  "legacy_images/13.조선 중기,후기/백두산 정계비(숙종 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\신윤복의 풍속화(정조 시기).png": {
+  "legacy_images/13.조선 중기,후기/신윤복의 풍속화(정조 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\창경궁(숙종 시기).png": {
+  "legacy_images/13.조선 중기,후기/창경궁(숙종 시기).png": {
     "total": 3,
     "correct": 1
   },
-  "legacy_images\\13.조선 전기\\백운동서원_소수서원(중종 시기).png": {
+  "legacy_images/13.조선 전기/백운동서원_소수서원(중종 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\허준의 동의보감(광해군 시기).png": {
+  "legacy_images/13.조선 중기,후기/허준의 동의보감(광해군 시기).png": {
     "total": 3,
     "correct": 2
   },
-  "legacy_images\\13.조선 전기\\경복궁(태조시기).png": {
+  "legacy_images/13.조선 전기/경복궁(태조시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 전기\\몽유도원도(세종시기_안견이 그린 안평대군의 꿈).png": {
+  "legacy_images/13.조선 전기/몽유도원도(세종시기_안견이 그린 안평대군의 꿈).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\삼전도 비(인조시기).png": {
+  "legacy_images/13.조선 중기,후기/삼전도 비(인조시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\환구단(고종 시기).png": {
+  "legacy_images/13.조선 중기,후기/환구단(고종 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\탕평비(영조 시기).png": {
+  "legacy_images/13.조선 중기,후기/탕평비(영조 시기).png": {
     "total": 3,
     "correct": 3
   },
-  "legacy_images\\13.조선 중기,후기\\정선 진경산수화.png": {
+  "legacy_images/13.조선 중기,후기/정선 진경산수화.png": {
     "total": 4,
     "correct": 2
   },
-  "legacy_images\\13.조선 중기,후기\\금강전도(영조 시기).png": {
+  "legacy_images/13.조선 중기,후기/금강전도(영조 시기).png": {
     "total": 3,
     "correct": 3
   },
@@ -2064,90 +2064,90 @@
     "correct": 2
   },
   "국외독립운동|일본|이봉창이 일왕의 행렬에 폭탄 투척": {
-    "total": 5,
-    "correct": 5
+    "total": 6,
+    "correct": 6
   },
   "국외독립운동|미국|하와이-대조선 국민 군단": {
-    "total": 6,
-    "correct": 6
+    "total": 7,
+    "correct": 7
   },
   "국외독립운동|서간도 (남만주)|경학사 설립 (한인 자치기구)": {
-    "total": 8,
-    "correct": 6
+    "total": 9,
+    "correct": 7
   },
   "국외독립운동|멕시코|숭무학교 설립": {
-    "total": 8,
-    "correct": 5
+    "total": 10,
+    "correct": 7
   },
   "국외독립운동|북간도|이범윤- 간도관리사, 간도협약 체결 (일제와)": {
-    "total": 6,
-    "correct": 6
+    "total": 7,
+    "correct": 7
   },
   "국외독립운동|북간도|중광단 조직 (대종교 계열)-> 북로 군정서로 확대 개편": {
-    "total": 8,
-    "correct": 5
+    "total": 9,
+    "correct": 6
   },
   "국외독립운동|서간도 (남만주)|신민회의 독립운동 기지": {
-    "total": 6,
-    "correct": 5
+    "total": 7,
+    "correct": 6
   },
   "국외독립운동|연해주 (러시아)|대한국민의회 (임시정부 성격의 최초 조직)": {
-    "total": 8,
-    "correct": 3
-  },
-  "국외독립운동|서간도 (남만주)|신흥강습소 → 신흥무관학교로 발전, 독립군 양성의 산실!": {
-    "total": 8,
-    "correct": 6
-  },
-  "국외독립운동|중국 (상하이)|신한청년당 조직": {
-    "total": 8,
-    "correct": 1
-  },
-  "국외독립운동|일본|도쿄의 유학생 중심으로 조선 청년 독립단이 2.8독립선언서 발표": {
-    "total": 7,
-    "correct": 6
-  },
-  "국외독립운동|서간도 (남만주)|이회영, 이시영 형제 중심": {
-    "total": 8,
+    "total": 10,
     "correct": 4
   },
-  "국외독립운동|미국|대한인국민회 (한인 단체)": {
-    "total": 8,
+  "국외독립운동|서간도 (남만주)|신흥강습소 → 신흥무관학교로 발전, 독립군 양성의 산실!": {
+    "total": 9,
+    "correct": 7
+  },
+  "국외독립운동|중국 (상하이)|신한청년당 조직": {
+    "total": 10,
     "correct": 2
+  },
+  "국외독립운동|일본|도쿄의 유학생 중심으로 조선 청년 독립단이 2.8독립선언서 발표": {
+    "total": 8,
+    "correct": 7
+  },
+  "국외독립운동|서간도 (남만주)|이회영, 이시영 형제 중심": {
+    "total": 10,
+    "correct": 6
+  },
+  "국외독립운동|미국|대한인국민회 (한인 단체)": {
+    "total": 10,
+    "correct": 3
   },
   "국외독립운동|서간도 (남만주)|삼원보에 독립운동 기지 건설": {
-    "total": 8,
-    "correct": 2
+    "total": 10,
+    "correct": 3
   },
   "국외독립운동|서간도 (남만주)|사료- \"서간도시종기\"": {
-    "total": 6,
-    "correct": 6
+    "total": 7,
+    "correct": 7
   },
   "국외독립운동|연해주 (러시아)|성명회 조직": {
-    "total": 8,
-    "correct": 5
+    "total": 9,
+    "correct": 6
   },
   "국외독립운동|미국|흥사단 창립 (안창호), 민족 실력 양성 운동": {
-    "total": 6,
-    "correct": 6
+    "total": 7,
+    "correct": 7
   },
   "국외독립운동|연해주 (러시아)|권업회 조직 (한인 자치단체)": {
-    "total": 7,
-    "correct": 6
+    "total": 8,
+    "correct": 7
   },
   "국외독립운동|연해주 (러시아)|대한광복군 정부 수립 (이상설, 이동휘), 무장투쟁 노선": {
-    "total": 7,
-    "correct": 6
+    "total": 8,
+    "correct": 7
   },
   "국외독립운동|연해주 (러시아)|신한촌 형성 (한인 마을)": {
-    "total": 8,
-    "correct": 5
+    "total": 9,
+    "correct": 6
   },
   "국외독립운동|북간도|이상설- 서전서숙 설립 (최초의 근대 사립학교)": {
     "total": 1,
     "correct": 1
   },
-  "legacy_images\\13.조선 전기\\혼일강리역대국도지도(태종시기)_현존하는 동양최고의 세계지도.png": {
+  "legacy_images/13.조선 전기/혼일강리역대국도지도(태종시기)_현존하는 동양최고의 세계지도.png": {
     "total": 1,
     "correct": 1
   },
@@ -2236,11 +2236,63 @@
     "correct": 1
   },
   "국외독립운동|북간도|이상설- 서전서숙 설립": {
-    "total": 7,
-    "correct": 2
+    "total": 9,
+    "correct": 4
   },
   "학교|육영공원(1886)|정부 설립, 양반 자제 교육": {
     "total": 2,
     "correct": 2
+  },
+  "한글연구|조선어학회 시기 (1931~)|한글맞춤법 통일안 제정": {
+    "total": 3,
+    "correct": 2
+  },
+  "한글연구|조선어학회 시기 (1931~)|한글 강습 교재 제작": {
+    "total": 3,
+    "correct": 3
+  },
+  "한글연구|조선어학회 시기 (1931~)|우리말 큰사전 편찬 착수": {
+    "total": 3,
+    "correct": 2
+  },
+  "한글연구|조선어학회 시기 (1931~)|표준어 제정": {
+    "total": 3,
+    "correct": 3
+  },
+  "한글연구|조선어연구회 (1921)|가갸날 제정 (1926) - 한글날의 전신": {
+    "total": 3,
+    "correct": 3
+  },
+  "한글연구|조선어연구회 (1921)|잡지 \"한글\" 창간 (1927)": {
+    "total": 3,
+    "correct": 2
+  },
+  "한글연구|조선광문회 (1910)|최남선, 박은식 등": {
+    "total": 3,
+    "correct": 3
+  },
+  "한글연구|조선광문회 (1910)|고전 간행": {
+    "total": 3,
+    "correct": 3
+  },
+  "민족주의 사학, 사회경제사학, 조선학 운동|신채호|조선상고사 (옥중에서 집필)- 고조선부터 백제 멸망까지 고대사": {
+    "total": 1,
+    "correct": 1
+  },
+  "민족주의 사학, 사회경제사학, 조선학 운동|신채호|조선사연구초- 한국 고대사 연구 논문 모음집": {
+    "total": 1,
+    "correct": 1
+  },
+  "민족주의 사학, 사회경제사학, 조선학 운동|박은식|한국통사": {
+    "total": 1,
+    "correct": 1
+  },
+  "민족주의 사학, 사회경제사학, 조선학 운동|문일평|조선심 강조": {
+    "total": 1,
+    "correct": 0
+  },
+  "민족주의 사학, 사회경제사학, 조선학 운동|정인보|광개토대왕릉비 연구": {
+    "total": 1,
+    "correct": 0
   }
 }
