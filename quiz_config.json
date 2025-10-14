@@ -19,9 +19,9 @@
   "show_artifact_name": false,
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
-  "quiz_mode": "choice",
+  "quiz_mode": "artifact",
   "window_geometry": "785x1008+595+0",
   "selected_choice_categories": [
-    "민족주의 사학, 사회경제사학, 조선학 운동"
+    "인물_성리학자"
   ]
 }

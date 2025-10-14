@@ -796,8 +796,8 @@
     "correct": 5
   },
   "궁궐|경복궁|조선물산공진회 개최 장소로 이용": {
-    "total": 6,
-    "correct": 2
+    "total": 7,
+    "correct": 3
   },
   "궁궐|덕수궁 중명전|을사늑약이 체결된 곳": {
     "total": 5,
@@ -860,7 +860,7 @@
     "correct": 2
   },
   "legacy_images/9.가야/금동관.png": {
-    "total": 4,
+    "total": 5,
     "correct": 2
   },
   "legacy_images/4.철기/오수전.png": {
@@ -876,12 +876,12 @@
     "correct": 2
   },
   "legacy_images/7.백제/사택 지적비.png": {
-    "total": 2,
-    "correct": 1
+    "total": 3,
+    "correct": 2
   },
   "legacy_images/9.가야/청동 솥(동복).png": {
-    "total": 5,
-    "correct": 2
+    "total": 6,
+    "correct": 3
   },
   "legacy_images/11.통일신라/진전사지 도의선사탑.png": {
     "total": 2,
@@ -1112,8 +1112,8 @@
     "correct": 2
   },
   "legacy_images/10.발해/상경부 치미(고구려 영향).png": {
-    "total": 4,
-    "correct": 2
+    "total": 5,
+    "correct": 3
   },
   "legacy_images/9.가야/판갑옷과 투구.png": {
     "total": 2,
@@ -1980,7 +1980,7 @@
     "correct": 3
   },
   "legacy_images/13.조선 중기,후기/창경궁(숙종 시기).png": {
-    "total": 3,
+    "total": 4,
     "correct": 1
   },
   "legacy_images/13.조선 전기/백운동서원_소수서원(중종 시기).png": {
@@ -2012,8 +2012,8 @@
     "correct": 3
   },
   "legacy_images/13.조선 중기,후기/정선 진경산수화.png": {
-    "total": 4,
-    "correct": 2
+    "total": 5,
+    "correct": 3
   },
   "legacy_images/13.조선 중기,후기/금강전도(영조 시기).png": {
     "total": 3,
@@ -2156,12 +2156,12 @@
     "correct": 1
   },
   "궁궐|덕수궁|광해군이 인목대비를 유폐시킨 곳": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "궁궐|경복궁|근정전을 정전으로 한다": {
-    "total": 1,
-    "correct": 0
+    "total": 2,
+    "correct": 1
   },
   "조선시대 신분, 직업, 직책|만상|의주를 근거지로 활동한 사상": {
     "total": 1,
@@ -2324,6 +2324,26 @@
     "correct": 0
   },
   "민족주의 사학, 사회경제사학, 조선학 운동|신채호|핵심 사상- \"아(我)와 비아(非我)의 투쟁\"": {
+    "total": 1,
+    "correct": 1
+  },
+  "궁궐|창경궁|사도세자 뒤주에 갖힌 곳": {
+    "total": 1,
+    "correct": 1
+  },
+  "궁궐|창경궁|장희빈이 취선당에서 사망": {
+    "total": 1,
+    "correct": 1
+  },
+  "궁궐|창덕궁|후원(비원, 부용정, 주합루)으로 유명": {
+    "total": 1,
+    "correct": 0
+  },
+  "궁궐|경복궁|경회루": {
+    "total": 1,
+    "correct": 0
+  },
+  "궁궐|경복궁|1887년에 전등이 처음 들어온 곳": {
     "total": 1,
     "correct": 1
   }
