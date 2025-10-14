@@ -12,16 +12,16 @@
     "발해",
     "통일신라",
     "고려",
-    "조선 전기",
-    "조선 중기,후기"
+    "조선 중기,후기",
+    "조선 전기"
   ],
   "accuracy_filter": 100,
   "show_artifact_name": false,
   "auto_next_delay": 0,
   "prioritize_wrong_answers": true,
-  "quiz_mode": "choice",
-  "window_geometry": "915x955+498+29",
+  "quiz_mode": "artifact",
+  "window_geometry": "914x970+591+39",
   "selected_choice_categories": [
-    "지역사"
+
   ]
 }
