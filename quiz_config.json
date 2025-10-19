@@ -1,19 +1,7 @@
 {
   "selected_categories": [
-    "구석기",
-    "신석기",
-    "청동기",
-    "철기",
-    "동예",
-    "고구려",
-    "백제",
-    "신라",
-    "가야",
-    "발해",
-    "통일신라",
-    "고려",
-    "조선 전기",
-    "조선 중기,후기"
+    "조선 중기,후기",
+    "조선 전기"
   ],
   "accuracy_filter": 100,
   "show_artifact_name": false,
@@ -22,6 +10,6 @@
   "quiz_mode": "choice",
   "window_geometry": "785x1008+434+0",
   "selected_choice_categories": [
-    "세시풍속"
+    "무덤"
   ]
 }
